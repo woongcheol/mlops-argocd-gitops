@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: deploy-mnist
+  name: deploy-mnist
+spec:
+  ports:
+  - port: 8000
+    protocol: TCP
+    targetPort: 8000
+  selector:
+    app: deploy-mnist
+  type: LoadBalancer
+status:
+  loadBalancer: {}
