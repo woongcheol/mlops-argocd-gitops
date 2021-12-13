@@ -18,7 +18,7 @@ spec:
         app: deploy-mnist
     spec:
       containers:
-      - image: jsk4074/mnist:v20
+      - image: jsk4074/mnist:v21
         name: mnist
         resources: {}
 status: {}
