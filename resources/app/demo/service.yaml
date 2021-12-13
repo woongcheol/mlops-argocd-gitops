@@ -7,9 +7,9 @@ metadata:
   name: deploy-mnist
 spec:
   ports:
-  - port: 8000
+  - port: 80
     protocol: TCP
-    targetPort: 8000
+    targetPort: 80
   selector:
     app: deploy-mnist
   type: LoadBalancer
